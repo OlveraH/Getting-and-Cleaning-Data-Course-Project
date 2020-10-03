@@ -1,7 +1,7 @@
 ---
-title: "Codebook"
-author: "OlveraH"
-date: "3/10/2020"
+Title: "Codebook"
+Author: "OlveraH"
+Date: "3/10/2020"
 ---
 ## Overview
 The run_analysis.R script performs the data preparation and then followed by the 5 steps required as described in the course project’s assignment.
@@ -34,7 +34,7 @@ Train data of activities’code labels.
 - Merged: created by merging Subject, Y and X using cbind() function
 
 #### 4. Extracts only the measurements on the mean and standard deviation for each measurement.
-- TidyData: created by subsetting Merged_Data, selecting only columns: subject, code and the measurements on the mean and standard deviation (std) for each measurement.
+- Tidy: created by subsetting Merged, selecting only columns: subject, code and the measurements on the mean and standard deviation (std) for each measurement.
 
 #### 5. Uses descriptive activity names to name the activities in the data set
 - Entire numbers in code column replaced with corresponding activity taken from second column of the activities variable.
@@ -49,5 +49,5 @@ Train data of activities’code labels.
 - t in column’s name replaced by Time.
 
 #### 7. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-- FinalData: created by sumarizing Tidy taking the means of each variable for each activity and each subject, after groupped by subject and activity.
+- Final: created by sumarizing Tidy taking the means of each variable for each activity and each subject, after groupped by subject and activity.
 Export Final into Final.txt file.
